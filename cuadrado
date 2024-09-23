@@ -1,0 +1,11 @@
+#\este programa genera un cuadrado de las dimensiones que le digamos
+def cuadrado():
+  ancho=int(input("ELIGE ALTURA DEL CUADRADO: "))
+  alto=int(input("ELIGE ANCHURA DEL CUADRADO: "))
+  for cont in range(1,ancho+1):
+    for cont in range(1,alto+1):
+     print("*",end='')
+    print("") #\n hace salto de línea
+  
+
+cuadrado()
