@@ -1,0 +1,8 @@
+def suma(): #este programa suma 1+2+3+4+5... hasta el número que le digas
+  numero=int(input("¿Hasta qué número quieres que sume? "))
+  suma=0
+  for cont in range(1,numero+1):
+    suma=suma+cont #le sumo a la variable suma en nuevo valor de cont
+    print(str(suma))
+
+suma()
