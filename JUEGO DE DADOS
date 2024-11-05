@@ -1,0 +1,35 @@
+#Vamos a hacer un ejercio en el que tiremos de un dado 3 veces yo y otras 3 la
+#maquina, luego veremos quien tiene más puntuación
+import random
+import time
+
+def dado():
+    jugador=0
+    ordenador=0
+    
+    
+    respuesta=input("Comienza el juego de dados:")
+    for cont in range(1,4):
+        tirada=int((random.random()*10)%6+1) #numero entre 0-6
+        print("El ordenador a tirado un "+str(tirada))
+        ordenador=ordenador+tirada
+        
+        tirada=int((random.random()*10)%6+1) #numero entre 0-6
+        respuesta=input("TURNO JUGADOR:")
+        print("Has sacado un "+str(tirada))
+        jugador=jugador+tirada
+        print("PUNTUACIÓN SUMA DE RONDAS "+str(cont)+"= "+"Ordenador "+str(ordenador)+ " "
+              +"JUGADOR "+str(jugador))
+        
+    print("FIN DEL JUEGO")
+    if(ordenador>jugador):
+        print("HA GANADO EL ORDENADOR")
+    if(jugador>ordenador):
+        print("HA GANADO EL JUGADOR")
+    if(jugador==ordenador):
+        print("HAY UN EMPATE")
+        
+
+dado()
+
+
