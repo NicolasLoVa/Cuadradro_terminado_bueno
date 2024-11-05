@@ -1,0 +1,8 @@
+#Cambiamos la letra de una cadena por un espacio
+def reemplazador():
+    frase=input("Digame su una frase: ")
+    letra=input("Digame una letra: ")
+    nueva_frase=frase.replace(letra," ")
+    print(nueva_frase)
+            
+reemplazador()
