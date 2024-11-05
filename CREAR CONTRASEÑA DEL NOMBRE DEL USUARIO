@@ -1,0 +1,15 @@
+#Haz un programa que lea el nombre, los apellidos y la edad de nacimiento y
+#devuelva una cadena con: 3 primeras letras del apellidos 1, 3 primeras letras
+#del 2 apellido, 3 primeras letras del nombre, 2 últimas cifras del año
+#de nacimiento
+
+def nombre():
+    nombre=input("Nombre: ")
+    apellido1=input("Primer apellido: ")
+    apellido2=input("Segundo apellido: ")
+    nacimiento=input("Fecha de nacimiento (dd/mm/aaaa): ")
+    usuario=apellido1[0:3]+apellido2[0:3]+nombre[0:3]+nacimiento[8:10]
+    print("Usuario: "+usuario)
+    
+        
+nombre()
