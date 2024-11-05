@@ -1,0 +1,8 @@
+#Leo una frase y la transformo en MAYÚSCULAS
+
+def masyusculadizador():
+    frase=raw_input("Dime algo:")
+    nueva_frase=frase.upper()
+    print(nueva_frase)
+            
+masyusculadizador()
