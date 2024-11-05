@@ -1,0 +1,14 @@
+#guardamos una palabra y la deletreamos
+
+def antontizador():
+    palabra=input("Dime una palabra con muchas vocales:")
+    longitud=len(palabra)#lee número de letras de la palabra
+    for cont in range (0,longitud): #indentifica
+        if(palabra[cont]=='A'or palabra[cont]=='E'or palabra[cont]=='I'or palabra[cont]=='O'):
+            print('U')#sustituye letras por "U"
+        else:
+            print(palabra[cont])
+
+    print(palabra)
+        
+antontizador()
