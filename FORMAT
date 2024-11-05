@@ -1,0 +1,8 @@
+#Uso del metodo format()
+def formateador():
+    nombre=input("NOMBRE: ")
+    edad=input("EDAD: ")
+    frase= "Buenos días, me llamo {} y tengo {} años".format(nombre,edad)
+    print(frase)
+            
+formateador()
