@@ -1,0 +1,12 @@
+#guardamos una palabra y la deletreamos
+
+def detecta_letra():
+    palabra=input('Dime una frase:')
+    print("Voy a verificar si contiene la palabra si")
+    if "si" or "Si" in palabra:
+        print("Sí que la contiene")
+    else:
+        print("No la contiene")
+    
+        
+detecta_letra()
