@@ -1,0 +1,13 @@
+#un ejercicio que genera al azar un numero entre 1 y 10
+import random
+
+def dado():
+    respuesta=input("¿Quieres que tire un dado S/N? ")
+    while(respuesta=='S'):
+        tirada=random.random()
+        print("Ha salido un "+str(tirada))
+        respuesta=input("¿Quieres volver a tirar el dado (S/N)? ")
+    print("Se acabó el juego")#si la respuesta es "n" se acaba, o despues de
+    #tirar 2 veces
+    
+dado()
