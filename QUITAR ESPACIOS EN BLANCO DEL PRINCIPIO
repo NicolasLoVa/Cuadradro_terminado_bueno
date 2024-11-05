@@ -1,0 +1,6 @@
+def quitar_blanco():
+    frase=input("Dime algo:")
+    nueva_frase=frase.stip()
+    print(nueva_frase)
+            
+quitar_blanco()
