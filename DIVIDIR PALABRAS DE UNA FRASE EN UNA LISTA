@@ -1,0 +1,7 @@
+#Dividimos el texto en palabras
+def espliteador():
+    frase=input("Dígame algo inteligente: ")
+    nueva_frase=frase.split()
+    print(nueva_frase)
+            
+espliteador()
