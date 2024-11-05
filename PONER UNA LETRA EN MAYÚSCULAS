@@ -1,0 +1,9 @@
+#Cambiamos la letra de una cadena por un espacio
+def mayusculas():
+    frase=input("Digame su una frase: ")
+    letra=input("Digame una letra: ")
+    letra_mayuscula=letra.upper()
+    nueva_frase=frase.replace(letra,letra_mayuscula)
+    print(nueva_frase)
+            
+mayusculas()
