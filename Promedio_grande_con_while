@@ -1,0 +1,14 @@
+# Este programa sirve para ...
+def programa_1():
+    max_num=input("Introduce un número: ")
+    sum_nums=max_num
+    contador=0
+    while(int(contador)<=9):
+        contador = int(contador) + 1
+        num = input("Introduce otro número ")
+        sum_nums =sum_nums+ num
+    if num > max_num:
+        max_num = num
+    print("El número más grande es: "+str(max_num))
+    print("El promedio es: "+str(num))
+programa_1()
