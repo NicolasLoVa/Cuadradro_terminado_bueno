@@ -1,0 +1,8 @@
+# Este programa sirve para decir un numero y sacar su factorial
+def programa():
+    factorial=1
+    num = int(input("Dime un número y te calculo su factorial: "))
+    for cont in range(1,num+1):
+        factorial=factorial*cont
+        print("Factorial: "+str(factorial))
+programa()
