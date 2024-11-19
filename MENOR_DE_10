@@ -1,0 +1,10 @@
+# Este programa sirve para sacar 10 numero y decir cual es el mayor
+def programa():
+    cont=1
+    menor = float(input("Enter "+ str(cont)+" number: "))
+    for cont in range(2,11):
+        num = float(input("Enter "+ str(cont)+" number: "))
+        if(num<menor):
+            menor=num
+    print (" ",menor)
+programa()
