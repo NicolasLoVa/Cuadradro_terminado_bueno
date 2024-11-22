@@ -1,13 +1,21 @@
 # Este programa sirve para decir un numero y sacar su factorial
 def programa():
     factorial=1
-    num = int(input("Dime un número y te calculo su factorial: "))
+    divisor=1
+    suma=0
+    num = int(input("Dime un número y te calculo digo sus divisores: "))
     while(num<=0):
         print("ERROR, vuelve a introducir un número: ")
-        num = int(input("Dime un número y te calculo su factorial: "))
+        num = int(input("Dime un número y te calculo digo sus divisores: "))
 
     for cont in range(1,num+1):
-        factorial=factorial*cont
-        print("Factorial: "+str(factorial))
+        if(num%cont==0):
+            divisor=num/cont
+            print("Divisor: "+str(divisor))
+            suma=suma + 1
+    if(suma==num):
+        print("ES UN NÚMERO PERFECTO")
+    else:
+        print("NO ES UN NÚMERO PERFECTO")
         
 programa()
