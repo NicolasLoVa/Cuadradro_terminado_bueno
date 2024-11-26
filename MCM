@@ -1,0 +1,14 @@
+def MCM():
+    num1 = int(input("Dime un número: "))
+    num2 = int(input("Dime otro número: "))
+    num3 = int(input("Dime otro número más: "))
+    numdivisor = 0
+    result = num1 * num2 * num3
+    mcm=result
+    for cont in range(result,1,-1):#contar hacia atras (-1) desde el num hasta (1)
+        if (cont % num1 == 0 and cont%num2 == 0 and cont%num3 == 0):#si divide el numero y da 0 en los 3 numeros es MCM
+            mcm= cont
+            numdivisor = numdivisor+1
+            print("Paso "+str(numdivisor)+": "+str(cont))
+    print("El MCM de los tres numeros es: "+ str(mcm))
+MCM()
